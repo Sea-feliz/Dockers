@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cli
+spec:
+  nodeSelector: 
+    PURPOSE: DB
+  containers: 
+    - name: centos
+      image: centos
+      command: ["sleep"]
+      args: ["10000"]
+
